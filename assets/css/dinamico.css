@@ -25,3 +25,31 @@
 .slideshow-toggle{font-size:10px;color:#ffe1cb;border:0;background:transparent;padding:8px 0;text-align:right;font-weight:750;white-space:nowrap}
 .slideshow-toggle:hover{text-decoration:underline}
 .showcase :is(button):focus-visible{outline:3px solid #ffc17e;outline-offset:3px}
+
+/* Composicao da galeria em telas menores sem alterar o layout anterior. */
+@media(max-width:1150px){
+  .showcase-copy{padding:34px 27px 26px}
+  .showcase-media{min-height:375px}
+  .showcase-text{padding:30px 0}
+}
+@media(max-width:780px){
+  .showcase{grid-template-columns:1fr}
+  .showcase-media{min-height:275px;padding:40px 30px}
+  .showcase-media img{max-height:285px}
+  .showcase-copy{min-height:325px;padding:28px}
+  .showcase-text{padding:24px 0 22px}
+  .showcase-text h3{font-size:clamp(24px,5vw,32px)}
+}
+@media(max-width:460px){
+  .showcase{border-radius:16px}
+  .showcase-media{min-height:245px;padding:45px 15px}
+  .showcase-media img{max-height:215px}
+  .showcase-stamp,.showcase-photo-note{left:15px;font-size:8px}
+  .showcase-copy{padding:23px 20px}
+  .showcase-footer{align-items:flex-start;flex-direction:column}
+  .slideshow-toggle{text-align:left}
+  .showcase-meta{font-size:9px}
+}
+@media(prefers-reduced-motion:reduce){
+  .carousel-arrow,.showcase-media,.slide-dot span{transition:none}
+}
