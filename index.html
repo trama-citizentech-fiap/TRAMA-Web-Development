@@ -15,6 +15,7 @@
   <link rel="stylesheet" href="assets/css/dinamico.css">
   <script src="assets/js/script.js" defer></script>
   <script src="assets/js/galeria.js" defer></script>
+  <script src="assets/js/formulario.js" defer></script>
 </head>
 <body>
   <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
@@ -56,7 +57,7 @@
           </button>
           <span class="topbar-context">CITIZENTECH <span class="topbar-divider">/</span> <strong>PROPOSTA DE IMPACTO</strong></span>
         </div>
-        <span class="demo-pill"><span class="status-dot" aria-hidden="true"></span> Apresentação acadêmica</span>
+        <span class="demo-pill"><span class="status-dot" aria-hidden="true"></span> Apresentação acadêmica · Interativa</span>
       </header>
 
       <main id="conteudo" class="main-content">
@@ -180,10 +181,75 @@
             </div>
           </section>
 
-          <div class="closing-banner"><div><span>TRAMA · CITIZENTECH</span><h2>Onde a arte encontra caminhos.</h2></div><a href="#inicio" class="btn btn-dark">Voltar ao início <span aria-hidden="true">↑</span></a></div>
+
+          <!-- Web Development: formulario validado por JavaScript sem envio real de dados. -->
+          <section class="content-section" id="participe" aria-labelledby="participe-title">
+            <div class="section-intro">
+              <span class="eyebrow">07 <span>·</span> PARTICIPE DA CONVERSA</span>
+              <h2 id="participe-title">Boas ideias crescem<br><em>quando compartilhadas.</em></h2>
+              <p>Teste um contato com a equipe do TRAMA. Este formulário demonstra validações e interação com o DOM — não envia informações para servidores.</p>
+            </div>
+            <div class="contact-layout">
+              <div class="contact-aside">
+                <span class="contact-aside-tag">UM ESPAÇO PARA A SUA VOZ</span>
+                <h3>Queremos conhecer outras perspectivas.</h3>
+                <p>Conte como você participaria do ecossistema TRAMA. A demonstração verifica os dados digitados e mostra uma prévia do contato na própria página.</p>
+                <ul class="contact-highlights">
+                  <li><span aria-hidden="true">✦</span> Simulação sem cadastro</li>
+                  <li><span aria-hidden="true">◎</span> Validação de todos os campos</li>
+                  <li><span aria-hidden="true">⇄</span> Resposta instantânea na tela</li>
+                </ul>
+                <div class="contact-aside-footer">NENHUM DADO SERÁ ENVIADO OU GRAVADO</div>
+              </div>
+              <form class="contact-form" id="contact-form" novalidate>
+                <div class="form-heading"><span>CONTATO DEMONSTRATIVO</span><strong>Compartilhe sua ideia</strong></div>
+                <div class="form-row">
+                  <div class="form-field" id="field-name">
+                    <label for="contact-name">Seu nome <span aria-hidden="true">*</span></label>
+                    <input type="text" id="contact-name" name="nome" autocomplete="name" placeholder="Como podemos chamar você?" maxlength="80" aria-describedby="error-name" required>
+                    <small class="field-error" id="error-name" aria-live="polite"></small>
+                  </div>
+                  <div class="form-field" id="field-email">
+                    <label for="contact-email">Seu e-mail <span aria-hidden="true">*</span></label>
+                    <input type="email" id="contact-email" name="email" autocomplete="email" inputmode="email" placeholder="seuemail@exemplo.com" maxlength="120" aria-describedby="error-email" required>
+                    <small class="field-error" id="error-email" aria-live="polite"></small>
+                  </div>
+                </div>
+                <div class="form-field" id="field-profile">
+                  <label for="contact-profile">Como você participaria? <span aria-hidden="true">*</span></label>
+                  <select id="contact-profile" name="perfil" aria-describedby="error-profile" required>
+                    <option value="">Selecione uma opção</option>
+                    <option value="artista">Artista ou coletivo cultural</option>
+                    <option value="instituicao">Instituição ou espaço cultural</option>
+                    <option value="apoiador">Apoiador ou interessado</option>
+                  </select>
+                  <small class="field-error" id="error-profile" aria-live="polite"></small>
+                </div>
+                <div class="form-field" id="field-message">
+                  <div class="field-label-row"><label for="contact-message">Sua mensagem <span aria-hidden="true">*</span></label><span id="message-count" aria-live="off">0 / 500</span></div>
+                  <textarea id="contact-message" name="mensagem" rows="5" minlength="10" maxlength="500" placeholder="Conte uma ideia, dúvida ou como o TRAMA poderia ajudar..." aria-describedby="error-message message-count" required></textarea>
+                  <small class="field-error" id="error-message" aria-live="polite"></small>
+                </div>
+                <div class="form-actions">
+                  <button class="btn btn-contact" type="submit">Validar mensagem <span aria-hidden="true">↗</span></button>
+                  <button class="btn-clear" id="contact-clear" type="reset">Limpar campos</button>
+                </div>
+                <p class="form-privacy">* Campos obrigatórios. A validação acontece somente neste navegador; nenhuma mensagem é enviada.</p>
+                <div class="form-feedback" id="form-feedback" role="status" aria-live="polite" hidden></div>
+                <div class="form-preview" id="form-preview" hidden>
+                  <span class="form-preview-label">PRÉVIA GERADA NA PÁGINA</span>
+                  <h4 id="preview-title">Mensagem validada</h4>
+                  <p id="preview-summary"></p>
+                  <blockquote id="preview-message"></blockquote>
+                </div>
+              </form>
+            </div>
+          </section>
+
+          <div class="closing-banner"><div><span>TRAMA · CITIZENTECH</span><h2>Onde a arte encontra caminhos.</h2></div><div class="closing-actions"><a href="#participe" class="btn btn-coral">Compartilhar uma ideia <span aria-hidden="true">↗</span></a><a href="#inicio" class="btn btn-dark">Voltar ao início <span aria-hidden="true">↑</span></a></div></div>
         </div>
       </main>
-      <footer class="site-footer"><span>© 2026 TRAMA. Protótipo acadêmico, sem pagamentos reais.</span><span>FIAP · Global Solution 2026.2 · Front-end Design</span></footer>
+      <footer class="site-footer"><span>© 2026 TRAMA. Protótipo acadêmico, sem pagamentos reais.</span><span>FIAP · Global Solution 2026.2 · Front-end Design + Web Development</span></footer>
     </div>
   </div>
   <div class="menu-backdrop" id="menu-backdrop" hidden></div>
