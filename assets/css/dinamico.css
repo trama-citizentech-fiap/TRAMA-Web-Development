@@ -121,3 +121,9 @@
   .form-actions .btn-contact{flex:1}
   .form-heading strong{font-size:20px}
 }
+
+/* Chamada para a nova interacao preservando o botao original de voltar. */
+.closing-actions{display:flex;gap:10px;align-items:center;flex-wrap:wrap}
+.btn-coral{background:var(--coral);color:#fff}
+.btn-coral:hover{background:var(--coral-dark)}
+@media(max-width:460px){.closing-actions{width:100%}.closing-actions .btn{white-space:normal;text-align:center}}
