@@ -38,8 +38,15 @@
   const count = document.getElementById('slide-count');
   const dots = [...region.querySelectorAll('[data-slide]')];
   let current = 0;
+  const toggleButton = document.getElementById('slide-toggle');
+  const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
+  let userPaused = reducedMotion.matches;
+  let hovered = false;
+  let focusWithin = false;
+  const liveText = region.querySelector('.showcase-text');
 
-  function showSlide(index) {
+  function showSlide(index, automatic = false) {
+    liveText.setAttribute('aria-live', automatic ? 'off' : 'polite');
     current = (index + slides.length) % slides.length;
     const slide = slides[current];
     image.src = slide.src;
@@ -58,6 +65,26 @@
   document.getElementById('slide-prev').addEventListener('click', () => showSlide(current - 1));
   document.getElementById('slide-next').addEventListener('click', () => showSlide(current + 1));
   dots.forEach(dot => dot.addEventListener('click', () => showSlide(Number(dot.dataset.slide))));
+  function renderPauseState() {
+    toggleButton.textContent = userPaused ? 'Retomar troca automática ▶' : 'Pausar troca automática Ⅱ';
+    toggleButton.setAttribute('aria-pressed', String(userPaused));
+  }
+  toggleButton.addEventListener('click', () => {
+    userPaused = !userPaused;
+    renderPauseState();
+  });
+  region.addEventListener('mouseenter', () => { hovered = true; });
+  region.addEventListener('mouseleave', () => { hovered = false; });
+  region.addEventListener('focusin', () => { focusWithin = true; });
+  region.addEventListener('focusout', event => {
+    if (!region.contains(event.relatedTarget)) focusWithin = false;
+  });
+  window.setInterval(() => {
+    if (!userPaused && !hovered && !focusWithin && !document.hidden && !reducedMotion.matches) {
+      showSlide(current + 1, true);
+    }
+  }, 6500);
+  renderPauseState();
   region.addEventListener('keydown', event => {
     if (event.target.matches('input, select, textarea')) return;
     if (event.key === 'ArrowRight') {
