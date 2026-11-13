@@ -58,4 +58,14 @@
   document.getElementById('slide-prev').addEventListener('click', () => showSlide(current - 1));
   document.getElementById('slide-next').addEventListener('click', () => showSlide(current + 1));
   dots.forEach(dot => dot.addEventListener('click', () => showSlide(Number(dot.dataset.slide))));
+  region.addEventListener('keydown', event => {
+    if (event.target.matches('input, select, textarea')) return;
+    if (event.key === 'ArrowRight') {
+      event.preventDefault();
+      showSlide(current + 1);
+    } else if (event.key === 'ArrowLeft') {
+      event.preventDefault();
+      showSlide(current - 1);
+    }
+  });
 })();
