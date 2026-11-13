@@ -53,3 +53,46 @@
 @media(prefers-reduced-motion:reduce){
   .carousel-arrow,.showcase-media,.slide-dot span{transition:none}
 }
+
+/* Formulario de demonstracao — cartoes, hierarquia e identidade TRAMA. */
+.contact-layout{display:grid;grid-template-columns:minmax(0,.77fr) minmax(0,1.23fr);gap:19px;align-items:stretch}
+.contact-aside{position:relative;overflow:hidden;border-radius:19px;background:linear-gradient(155deg,#e77b6e,#e9a17e);color:#fff;padding:34px 32px;display:flex;flex-direction:column;min-height:550px;isolation:isolate}
+.contact-aside:after{content:'';position:absolute;border:1px solid #ffffff43;border-radius:50%;height:400px;width:400px;bottom:-240px;left:-175px;box-shadow:0 0 0 65px #ffffff0e,0 0 0 125px #ffffff0c;z-index:-1}
+.contact-aside-tag{color:#fff7ef;font-size:10px;letter-spacing:.15em;font-weight:850}
+.contact-aside h3{font-size:clamp(24px,2.5vw,36px);line-height:1.22;margin-top:45px;max-width:385px}
+.contact-aside p{font-size:13px;color:#fff8f4;line-height:1.85;max-width:420px;margin-top:23px}
+.contact-highlights{display:flex;flex-direction:column;gap:17px;list-style:none;padding:0;margin:34px 0 30px;font-size:12px;font-weight:750}
+.contact-highlights li{display:flex;align-items:center;gap:13px}
+.contact-highlights li span{width:31px;height:31px;display:grid;place-items:center;background:#ffffff23;border:1px solid #ffffff4c;border-radius:9px;font-size:17px}
+.contact-aside-footer{margin-top:auto;color:#ffe8d9;font-size:9px;letter-spacing:.14em;font-weight:850}
+.contact-form{background:#fff;border-radius:19px;border:1px solid var(--border);box-shadow:var(--shadow);padding:34px 34px 29px;min-width:0}
+.form-heading{display:flex;flex-direction:column;gap:5px;margin-bottom:28px}
+.form-heading span{color:var(--coral-dark);letter-spacing:.14em;font-size:10px;font-weight:850}
+.form-heading strong{font-family:var(--font-heading);font-size:23px;letter-spacing:-.045em;color:var(--ink)}
+.form-row{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
+.form-field{display:flex;flex-direction:column;gap:7px;margin-bottom:17px;min-width:0}
+.form-field label{font-size:12px;font-weight:850;color:#344158}
+.form-field label span{color:var(--coral-dark)}
+.form-field input,.form-field select,.form-field textarea{font:500 12px/1.5 var(--font-body);width:100%;min-height:47px;padding:12px 13px;background:#f9fafc;color:var(--ink);border:1px solid #dfe4ed;border-radius:10px;outline:none;transition:border-color .15s,box-shadow .15s;background-clip:padding-box}
+.form-field textarea{resize:vertical;min-height:127px}
+.form-field :is(input,textarea)::placeholder{color:#9aa5b5;opacity:1}
+.form-field :is(input,select,textarea):focus{border-color:#d97266;box-shadow:0 0 0 3px #e76f621a;background:#fff}
+.form-field.has-error :is(input,select,textarea){border-color:#cc5355;background:#fff9f9}
+.form-field .field-error{display:block;min-height:0;color:#b83742;font-size:11px;line-height:1.4}
+.form-field .field-error:empty{display:none}
+.field-label-row{display:flex;justify-content:space-between;align-items:center;gap:10px}
+#message-count{font-size:10px;color:#98a2b0;font-weight:750}
+.form-actions{display:flex;flex-wrap:wrap;align-items:center;gap:15px;margin-top:3px}
+.btn-contact{background:var(--coral);color:#fff;border:0;min-height:47px;font-size:12px}
+.btn-contact:hover{background:var(--coral-dark)}
+.btn-clear{border:0;color:#738195;background:transparent;font-size:12px;font-weight:750;padding:11px 5px}
+.btn-clear:hover{color:var(--ink);text-decoration:underline}
+.form-privacy{font-size:10px;color:#98a3b0;line-height:1.6;margin-top:18px}
+.form-feedback{font-size:12px;line-height:1.6;padding:14px 16px;border-radius:10px;margin-top:17px;font-weight:700}
+.form-feedback[data-state="error"]{color:#a53b41;background:#fff1f1;border:1px solid #f5d8db}
+.form-feedback[data-state="success"]{color:#286f57;background:#eefaef;border:1px solid #c6e8d3}
+.form-preview{background:#f6f8fb;border:1px solid #e2e8ef;border-radius:13px;padding:20px;margin-top:16px;overflow-wrap:anywhere}
+.form-preview-label{font-size:9px;font-weight:850;letter-spacing:.14em;color:#64758e}
+.form-preview h4{margin:10px 0;font-size:16px;color:var(--ink);font-family:var(--font-heading)}
+.form-preview p{font-size:12px;color:#58697f;line-height:1.7}
+.form-preview blockquote{border-left:3px solid var(--coral);margin:13px 0 0;padding:8px 0 8px 13px;font-size:12px;color:#53647c;line-height:1.65;white-space:pre-wrap}
