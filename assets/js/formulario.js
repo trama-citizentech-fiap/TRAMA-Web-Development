@@ -89,8 +89,8 @@
       errors[key].textContent = '';
     });
     clearResponse();
-    // O browser restaura os valores de um form reset apos o listener.
-    queueMicrotask(updateCounter);
+    // O navegador atualiza os valores depois do evento reset; recalcule no proximo ciclo.
+    window.setTimeout(updateCounter, 0);
   });
   updateCounter();
 })();
