@@ -57,5 +57,29 @@
       clearResponse();
     });
   });
+  form.addEventListener('submit', event => {
+    // Impede tanto o envio do formulario quanto a atualizacao da pagina.
+    event.preventDefault();
+    submittedOnce = true;
+    const valid = Object.keys(fields).map(validate).every(Boolean);
+    feedback.hidden = false;
+    if (!valid) {
+      feedback.dataset.state = 'error';
+      feedback.textContent = 'Há campos incompletos ou inválidos. Corrija os itens destacados antes de continuar.';
+      preview.hidden = true;
+      Object.keys(fields).find(key => fields[key].getAttribute('aria-invalid') === 'true') &&
+        fields[Object.keys(fields).find(key => fields[key].getAttribute('aria-invalid') === 'true')].focus();
+      return;
+    }
+
+    const selectedText = fields.profile.options[fields.profile.selectedIndex].textContent;
+    document.getElementById('preview-title').textContent = `Mensagem de ${fields.name.value.trim()}`;
+    document.getElementById('preview-summary').textContent =
+      `${selectedText} · ${fields.email.value.trim()}`;
+    document.getElementById('preview-message').textContent = fields.message.value.trim();
+    preview.hidden = false;
+    feedback.dataset.state = 'success';
+    feedback.textContent = 'Mensagem validada com sucesso! Veja a prévia abaixo. Nada foi enviado ou armazenado.';
+  });
   updateCounter();
 })();
