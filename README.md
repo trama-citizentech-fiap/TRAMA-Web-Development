@@ -95,8 +95,10 @@ Também existem **Visão geral**, um botão **Compartilhar uma ideia** e um bot�
 TRAMA_LANDING_CITIZENTECH/
 ├── .git/                       # Historico local real de commits, branches e merges
 ├── .gitignore                  # Exclusoes convencionais
+├── AI.md                       # Declaracao de uso de IA conforme slide da avaliacao
 ├── index.html                  # Todas as 7 secoes, incluindo galeria e formulario
 ├── README.md                   # Ficha da proposta e orientacoes das 2 materias
+├── TESTES_MANUAIS.md          # Roteiro dos cenarios de verificacao
 ├── equipe.txt                  # Nome, RM e link GitHub pendente de publicacao
 ├── integrantes.txt             # Arquivo legado da entrega Front-end Design
 ├── PUBLICAR_NO_GITHUB.md       # Orientacoes para criar organizacao e publicar historico
@@ -174,6 +176,7 @@ Esta é uma **versão ampliada da landing original**, construída sobre os mesmo
 | Formulários que impedem campos vazios | Formulário com nome, e-mail, tipo de participante e mensagem; validação também de formato e tamanho | **Implementado** |
 | Uso de DOM para manipulação de HTML/CSS | Imagem, textos, contadores, classes, estados ARIA, erros e prévia alterados via JavaScript | **Implementado** |
 | Arquivo `equipe.txt` | Nome completo, RM e campo de link GitHub | **Criado e preenchido; URL pendente** |
+| Arquivo `AI.md` quando há uso de IA | Declaração transparente das contribuições da ferramenta na versão nova | **Incluído** |
 | Branches para desenvolvimento e merge na principal | Branches locais `feature/galeria` e `feature/formulario`, integradas por merge a `main` | **Feito no repositório local (.git)** |
 | Mínimo de 15 commits | Histórico real dos arquivos e implementações mantido na pasta `.git/` | **Feito no repositório local (15+)** |
 | Organização e repositório no GitHub | Dependem de entrar na conta GitHub, criar organização e enviar os commits | **Pendente, exige acesso à conta** |
@@ -205,4 +208,4 @@ git rev-list --count main
 
 **Importante:** o histórico Git **local não substitui a publicação no GitHub** exigida na avaliação. Uma organização GitHub e um repositório online não podem ser inventados nem criados somente com um arquivo ZIP. O responsável pela conta deve criar a organização e o repositório, conectar o `origin` e fazer `push` da branch `main` e das branches de desenvolvimento. O roteiro está em **`PUBLICAR_NO_GITHUB.md`**. Depois, substituir `PENDENTE` pela URL real em `README.md`, `equipe.txt` e `integrantes.txt`, registrar o ajuste em novo commit, fazer `push` e gerar o ZIP final para envio ao Teams.
 
-O arquivo `AI.md`, mencionado nos slides como potencial critério de penalidade, **não faz parte da entrega**. O código é inteiramente legível e editável em HTML/CSS/JS, independentemente de como a equipe tenha desenvolvido a solução.
+O arquivo **`AI.md`** foi incluído porque houve assistência de IA e o slide da disciplina informa penalidade caso ele esteja ausente nessa situação. O registro descreve o uso feito e indica a necessidade de revisão pelo responsável.
