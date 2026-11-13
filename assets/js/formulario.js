@@ -67,8 +67,8 @@
       feedback.dataset.state = 'error';
       feedback.textContent = 'Há campos incompletos ou inválidos. Corrija os itens destacados antes de continuar.';
       preview.hidden = true;
-      Object.keys(fields).find(key => fields[key].getAttribute('aria-invalid') === 'true') &&
-        fields[Object.keys(fields).find(key => fields[key].getAttribute('aria-invalid') === 'true')].focus();
+      const firstInvalid = Object.keys(fields).find(key => fields[key].getAttribute('aria-invalid') === 'true');
+      if (firstInvalid) fields[firstInvalid].focus();
       return;
     }
 
@@ -80,6 +80,17 @@
     preview.hidden = false;
     feedback.dataset.state = 'success';
     feedback.textContent = 'Mensagem validada com sucesso! Veja a prévia abaixo. Nada foi enviado ou armazenado.';
+  });
+  form.addEventListener('reset', () => {
+    submittedOnce = false;
+    Object.keys(fields).forEach(key => {
+      fields[key].removeAttribute('aria-invalid');
+      fields[key].closest('.form-field').classList.remove('has-error');
+      errors[key].textContent = '';
+    });
+    clearResponse();
+    // O browser restaura os valores de um form reset apos o listener.
+    queueMicrotask(updateCounter);
   });
   updateCounter();
 })();
