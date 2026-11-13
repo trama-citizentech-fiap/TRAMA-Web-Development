@@ -102,6 +102,8 @@ TRAMA_LANDING_CITIZENTECH/
 ├── equipe.txt                  # Nome, RM e link GitHub pendente de publicacao
 ├── integrantes.txt             # Arquivo legado da entrega Front-end Design
 ├── PUBLICAR_NO_GITHUB.md       # Orientacoes para criar organizacao e publicar historico
+├── testes/
+│   └── verificar.mjs          # Testes estaticos com Node nativo (opcional)
 └── assets/
     ├── css/
     │   ├── styles.css          # CSS original preservado
@@ -207,5 +209,7 @@ git rev-list --count main
 ```
 
 **Importante:** o histórico Git **local não substitui a publicação no GitHub** exigida na avaliação. Uma organização GitHub e um repositório online não podem ser inventados nem criados somente com um arquivo ZIP. O responsável pela conta deve criar a organização e o repositório, conectar o `origin` e fazer `push` da branch `main` e das branches de desenvolvimento. O roteiro está em **`PUBLICAR_NO_GITHUB.md`**. Depois, substituir `PENDENTE` pela URL real em `README.md`, `equipe.txt` e `integrantes.txt`, registrar o ajuste em novo commit, fazer `push` e gerar o ZIP final para envio ao Teams.
+
+Para testes adicionais, caso o computador tenha Node.js instalado, execute `node --test testes/verificar.mjs`. O projeto não precisa de Node.js para abrir no navegador.
 
 O arquivo **`AI.md`** foi incluído porque houve assistência de IA e o slide da disciplina informa penalidade caso ele esteja ausente nessa situação. O registro descreve o uso feito e indica a necessidade de revisão pelo responsável.
