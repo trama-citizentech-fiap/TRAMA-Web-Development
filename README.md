@@ -1,13 +1,13 @@
 # TRAMA — Landing Page CitizenTech
 
-**FIAP · Engenharia de Software · Global Solution 2026.2 · Front-end Design**  
-**Atividade:** Landing Page — Vitrine de apresentação da solução  
+**FIAP · Engenharia de Software · Global Solution 2026.2 · Front-end Design + Web Development**  
+**Atividade:** Landing Page — versão estendida para Web Development (Front-end Dinâmico)  
 **Nome da proposta:** TRAMA — Onde a arte encontra caminhos  
 **Território inicial escolhido:** São Paulo (SP), **Cidade Tiradentes**, Zona Leste.
 
 ## 1. O que é este projeto?
 
-Esta entrega é uma **landing page independente** que explica, em cinco seções, o problema social, a tecnologia, os objetivos, o público-alvo e os benefícios do TRAMA. Ela preserva a identidade visual do protótipo TRAMA V3: sidebar azul-marinho, fundo claro, cartões arredondados, tipografia moderna e destaque coral/rosa.
+Esta entrega é uma **landing page independente** que explica, em cinco seções, o problema social, a tecnologia, os objetivos, o público-alvo e os benefícios do TRAMA. Ela preserva a identidade visual do protótipo TRAMA V3: sidebar azul-marinho, fundo claro, cartões arredondados, tipografia moderna e destaque coral/rosa. **Esta versão mantém todas as cinco seções originais e acrescenta uma galeria de três imagens e um formulário de contato validado por JavaScript puro.**
 
 **Importante:** a landing page é informativa; **não é a plataforma TRAMA completa**. Ela funciona separadamente e não altera o projeto original. As funcionalidades do TRAMA (perfis, portfólios, oportunidades, feed, conversas e apoios fictícios) pertencem ao protótipo principal, não a esta página de divulgação. Não são oferecidos pagamentos reais.
 
@@ -46,9 +46,9 @@ O TRAMA procura reduzir a **distância entre produção cultural e oportunidades
 
 ### 04 — Quais tecnologias serão empregadas?
 
-**Nesta landing page:** HTML5 semântico, CSS3 (Flexbox, variáveis CSS, responsividade), JavaScript puro para navegação e seleção interativa, imagens SVG locais e tipografia do Google Fonts com fontes de sistema como alternativa offline.
+**Nesta landing page:** HTML5 semântico, CSS3 (Flexbox, variáveis CSS, responsividade), JavaScript puro para navegação, seleção interativa, slideshow, teclado, formulário e validações, imagens SVG locais e tipografia do Google Fonts com fontes de sistema como alternativa offline.
 
-**No protótipo principal do TRAMA V3:** HTML, CSS, JavaScript, backend Python e banco SQLite local. A landing **não usa** nem precisa acessar o banco de dados. Não há dependências Node, CDN de JavaScript ou instalação de pacotes.
+**No protótipo principal do TRAMA V3:** HTML, CSS, JavaScript, backend Python e banco SQLite local. A landing **não usa** nem precisa acessar o banco de dados. A versão de Web Development inclui **slideshow, formulário, validação de campos, mensagens de retorno e atualização do DOM**, tudo diretamente no navegador. Não há dependências Node, CDN de JavaScript ou instalação de pacotes.
 
 ### 05 — Quem participará do ecossistema?
 
@@ -77,28 +77,37 @@ As fontes ajudam a justificar a **escolha do território para o projeto**, mas a
 
 ## 5. Seções e navegação da página
 
-O menu navega pelas **cinco seções exigidas**:
+O menu preserva as **cinco seções exigidas originalmente** e acrescenta duas novas para Web Development:
 
 1. **Problema:** a necessidade real de maior visibilidade e acesso a redes culturais.
 2. **Tecnologia:** fluxo resumido da solução e ferramentas utilizadas.
 3. **Objetivos:** valorizar, conectar e fortalecer criadores locais.
 4. **Público-alvo:** artista, instituição e apoiador; seletor interativo funcional.
 5. **Benefícios:** impactos esperados, indicadores mensuráveis e caminho de expansão.
+6. **Galeria interativa:** slideshow de três ilustrações do projeto com setas, pontos, teclado e troca automática pausável.
+7. **Participe:** formulário com nome, e-mail, perfil e mensagem; validações via JS e prévia em tela sem transmissão de dados.
 
-Também existem **Visão geral** e um botão **Voltar ao início** para facilitar a navegação. O menu muda de destaque de acordo com a seção visível e se adapta ao celular.
+Também existem **Visão geral**, um botão **Compartilhar uma ideia** e um botão **Voltar ao início** para facilitar a navegação. O menu muda de destaque de acordo com a seção visível e se adapta ao celular.
 
 ## 6. Organização dos arquivos
 
 ```text
 TRAMA_LANDING_CITIZENTECH/
-├── index.html                  # Estrutura HTML e conteúdo semântico
-├── README.md                   # Proposta, ficha, respostas e instruções
-├── integrantes.txt             # Identificação acadêmica: completar RM e conferir nome
+├── .git/                       # Historico local real de commits, branches e merges
+├── .gitignore                  # Exclusoes convencionais
+├── index.html                  # Todas as 7 secoes, incluindo galeria e formulario
+├── README.md                   # Ficha da proposta e orientacoes das 2 materias
+├── equipe.txt                  # Nome, RM e link GitHub pendente de publicacao
+├── integrantes.txt             # Arquivo legado da entrega Front-end Design
+├── PUBLICAR_NO_GITHUB.md       # Orientacoes para criar organizacao e publicar historico
 └── assets/
     ├── css/
-    │   └── styles.css          # Identidade visual, Flexbox e responsividade
+    │   ├── styles.css          # CSS original preservado
+    │   └── dinamico.css        # CSS adicional da galeria e do formulario
     ├── js/
-    │   └── script.js           # Menu, navegação e seleção de público-alvo
+    │   ├── script.js           # Navegacao e abas originais
+    │   ├── galeria.js          # SlideShow: tres imagens e eventos do DOM
+    │   └── formulario.js       # Validacao, mensagens e previa local
     └── img/
         ├── favicon.svg
         ├── conexao-artistica.svg
@@ -110,12 +119,14 @@ TRAMA_LANDING_CITIZENTECH/
 
 ## 7. Como abrir e testar no Windows
 
-1. Extraia o arquivo **TRAMA_LANDING_CITIZENTECH.zip**.
+1. Extraia o arquivo **TRAMA_WEB_DEVELOPMENT_GS.zip**.
 2. Abra a pasta extraída.
 3. Dê dois cliques em **`index.html`** para abrir no Chrome, Edge ou outro navegador moderno.
 4. Use o menu lateral para navegar por **Problema, Tecnologia, Objetivos, Público-alvo e Benefícios**.
 5. Em **Público-alvo**, clique em **Artistas**, **Instituições** e **Apoiadores** para testar a troca de conteúdo.
-6. Para testar responsividade, diminua a janela ou abra as ferramentas de desenvolvedor (F12) e escolha um tamanho de celular.
+6. Em **Galeria interativa**, teste as setas, os três indicadores, as setas do teclado e o botão para pausar/retomar a troca automática.
+7. Em **Participe**, tente validar o formulário vazio, preencha valores inválidos e depois valide todos os campos corretamente para exibir uma prévia. Use **Limpar campos** para zerar o formulário.
+8. Para testar responsividade, diminua a janela ou abra as ferramentas de desenvolvedor (F12) e escolha um tamanho de celular.
 
 **Não precisa iniciar o servidor Python do TRAMA.** O site roda direto pelo arquivo HTML (`file://`) e usa imagens locais. Sem internet, os estilos continuam funcionando com fontes de sistema; quando há conexão, o navegador usa as fontes importadas do Google Fonts.
 
@@ -136,8 +147,8 @@ TRAMA_LANDING_CITIZENTECH/
 - [x] Arquivos organizados em pastas, com caminhos relativos para abrir direto no navegador.
 - [x] README com ficha, seis respostas e instruções.
 - [x] Arquivo `integrantes.txt` incluído.
-- [ ] **Completar RM, conferir nome completo e acrescentar os demais integrantes** no arquivo `integrantes.txt`.
-- [ ] **Inserir URL do repositório** na ficha se a equipe tiver publicado o projeto.
+- [x] **Nome completo e RM preenchidos** em `integrantes.txt` e `equipe.txt` (único integrante informado).
+- [ ] **Inserir URL verdadeira do repositório GitHub** no README e em `equipe.txt` após a publicação.
 - [ ] Confirmar o canal e o horário de envio indicados pelo professor.
 
 **Prazo que aparece nos slides de Front-end Design:** até **19/11/2026**, via portal FIAP ou Teams, conforme orientação do professor. A entrega deve ser em **.zip**. Somente um integrante do grupo deve enviar.
@@ -150,3 +161,48 @@ Este projeto acadêmico propõe combater barreiras de acesso a oportunidades art
 
 **TRAMA · Arte transforma. Conexões também.**  
 Criado como proposta de CitizenTech para a Global Solution da FIAP.
+
+
+## 10. Web Development — Front-end Dinâmico (nova entrega)
+
+Esta é uma **versão ampliada da landing original**, construída sobre os mesmos arquivos e identidade visual. A entrega do componente de Web Development é separada da entrega da outra matéria.
+
+| Critério da avaliação | Como foi atendido | Situação |
+|---|---|---|
+| Sem frameworks | HTML5, CSS3 e JavaScript puro, sem React, Vue ou Bootstrap | **Implementado** |
+| SlideShow de 3 imagens relacionadas ao tema | Três imagens SVG locais relacionadas a cultura, conexão e artistas; setas, indicadores e troca automática com pausa | **Implementado** |
+| Formulários que impedem campos vazios | Formulário com nome, e-mail, tipo de participante e mensagem; validação também de formato e tamanho | **Implementado** |
+| Uso de DOM para manipulação de HTML/CSS | Imagem, textos, contadores, classes, estados ARIA, erros e prévia alterados via JavaScript | **Implementado** |
+| Arquivo `equipe.txt` | Nome completo, RM e campo de link GitHub | **Criado e preenchido; URL pendente** |
+| Branches para desenvolvimento e merge na principal | Branches locais `feature/galeria` e `feature/formulario`, integradas por merge a `main` | **Feito no repositório local (.git)** |
+| Mínimo de 15 commits | Histórico real dos arquivos e implementações mantido na pasta `.git/` | **Feito no repositório local (15+)** |
+| Organização e repositório no GitHub | Dependem de entrar na conta GitHub, criar organização e enviar os commits | **Pendente, exige acesso à conta** |
+| Entrega em ZIP | Projeto completo e histórico Git local incluídos no pacote | **Pronto para entrega após publicação** |
+
+### Funcionamento do SlideShow
+
+O carrossel apresenta as imagens `cultura-periferica.svg`, `conexao-artistica.svg` e `perfil-artista.svg` (todas incluídas no ZIP). Os botões de seta, os três pontos e as teclas `←` e `→` quando o carrossel está em foco mudam a imagem. A troca automática ocorre a cada 6,5 segundos quando a área não está em interação; o usuário pode pausá-la, e ela respeita a preferência de movimento reduzido do sistema. Nada depende de bibliotecas externas.
+
+### Funcionamento do formulário
+
+- **Nome:** obrigatório, com pelo menos 3 caracteres após remoção de espaços nas extremidades.
+- **E-mail:** obrigatório, com validação básica de formato.
+- **Perfil:** obrigatório, deve corresponder a uma das três categorias disponíveis.
+- **Mensagem:** obrigatória, mínimo de 10 e máximo de 500 caracteres, com contador em tempo real.
+- **Ao tentar enviar vazio/inválido:** o JavaScript cancela o envio (`preventDefault`), destaca os erros e move o foco para o primeiro campo com problema.
+- **Ao validar corretamente:** o navegador monta uma prévia segura com `textContent`, sem servidor, requisição, cobrança, armazenamento ou envio real de informações.
+- **Limpar campos:** restaura o formulário e oculta as mensagens e a prévia.
+
+## 11. Git / GitHub e finalização da entrega
+
+O ZIP inclui a pasta oculta **`.git`** para preservar as branches, os merges e o histórico de desenvolvimento. Para verificá-los, extraia o ZIP, abra o terminal **dentro da pasta** e execute:
+
+```bash
+git branch -a
+git log --oneline --graph --all
+git rev-list --count main
+```
+
+**Importante:** o histórico Git **local não substitui a publicação no GitHub** exigida na avaliação. Uma organização GitHub e um repositório online não podem ser inventados nem criados somente com um arquivo ZIP. O responsável pela conta deve criar a organização e o repositório, conectar o `origin` e fazer `push` da branch `main` e das branches de desenvolvimento. O roteiro está em **`PUBLICAR_NO_GITHUB.md`**. Depois, substituir `PENDENTE` pela URL real em `README.md`, `equipe.txt` e `integrantes.txt`, registrar o ajuste em novo commit, fazer `push` e gerar o ZIP final para envio ao Teams.
+
+O arquivo `AI.md`, mencionado nos slides como potencial critério de penalidade, **não faz parte da entrega**. O código é inteiramente legível e editável em HTML/CSS/JS, independentemente de como a equipe tenha desenvolvido a solução.
