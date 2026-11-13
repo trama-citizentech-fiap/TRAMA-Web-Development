@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="330" height="270" viewBox="0 0 330 270" role="img" aria-labelledby="tit des"><title id="tit">Artista</title><desc id="des">Pessoa criando arte em uma tela</desc>
+<ellipse cx="169" cy="259" rx="145" ry="13" fill="#c68e8b" opacity=".3"/>
+<path d="M54 246V85q0-13 13-13h107q12 0 12 13v161" stroke="#674b64" stroke-width="8" fill="none" stroke-linejoin="round"/><rect x="64" y="83" width="114" height="149" rx="6" fill="#f7ecd8"/><rect x="74" y="94" width="94" height="128" rx="5" fill="#dab2b4"/>
+<circle cx="121" cy="129" r="24" fill="#f8d397"/><path d="M76 211q13-53 38-48t54-5v53Z" fill="#8773ad"/><path d="M85 197q27-39 50-23t33 9" fill="none" stroke="#f1c885" stroke-width="14" stroke-linecap="round"/>
+<path d="M109 265q5-71 33-87 31-17 57 0l35 85" fill="#dd8070"/><path d="M160 177q25 42 45 1" fill="#e2a289"/><path d="M143 151q-18-47 21-64 42-16 54 28l-7 39-34 29Z" fill="#4f4660"/><ellipse cx="182" cy="144" rx="34" ry="43" fill="#ba7c6c"/><path d="M149 132q-4-47 38-48 31 1 35 34-17-13-28-11-7 24-45 25" fill="#4c405a"/><path d="M165 153q7-3 12 1m17-3q6-4 13-1" fill="none" stroke="#5d4149" stroke-width="3" stroke-linecap="round"/><path d="M178 169q6 5 16 0" stroke="#f8d7b9" fill="none" stroke-width="3" stroke-linecap="round"/>
+<path d="M210 202q41 4 41-35" stroke="#ba7c6c" stroke-width="18" fill="none" stroke-linecap="round"/><path d="m249 167 13-52" stroke="#644c5b" stroke-width="6" stroke-linecap="round"/><path d="m254 124 11-32 10 9-17 29Z" fill="#a27fbd"/>
+<path d="M119 189q-28 20-18 55" stroke="#ba7c6c" stroke-width="16" fill="none" stroke-linecap="round"/>
+<path d="M124 262h116" stroke="#6e5578" stroke-width="9" stroke-linecap="round"/>
+<path d="m275 67 6 16 17 6-17 6-6 17-6-17-17-6 17-6Z" fill="#f8c376"/><circle cx="286" cy="192" r="14" fill="#fff2d9" opacity=".7"/>
+</svg>

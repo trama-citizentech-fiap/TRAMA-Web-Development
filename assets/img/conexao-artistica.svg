@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="530" viewBox="0 0 640 530" role="img" aria-labelledby="title description">
+<title id="title">Arte conectada</title><desc id="description">Cartões com portfólio artístico, oportunidades e pessoas conectadas</desc>
+<defs>
+  <filter id="shadow" x="-40%" y="-40%" width="180%" height="200%"><feDropShadow dx="0" dy="15" stdDeviation="16" flood-color="#7b4240" flood-opacity=".24"/></filter>
+  <filter id="smallShadow" x="-40%" y="-40%" width="180%" height="200%"><feDropShadow dx="0" dy="9" stdDeviation="11" flood-color="#79414f" flood-opacity=".2"/></filter>
+  <linearGradient id="canvas" x1="0" x2="1" y1="0" y2="1"><stop stop-color="#dbadb4"/><stop offset="1" stop-color="#f7dcc1"/></linearGradient>
+  <linearGradient id="lav" x1="0" x2="1"><stop stop-color="#8064a7"/><stop offset="1" stop-color="#af92c9"/></linearGradient>
+</defs>
+<circle cx="332" cy="264" r="232" fill="none" stroke="#fff" stroke-opacity=".3" stroke-width="1.5"/>
+<circle cx="332" cy="264" r="179" fill="none" stroke="#fff" stroke-opacity=".25" stroke-width="1.5"/>
+<path d="M55 393 159 295l88 38 77-143 178 65" fill="none" stroke="#fff" stroke-dasharray="5 10" stroke-width="2" opacity=".45"/>
+<g transform="translate(104 74) rotate(-8 155 198)" filter="url(#shadow)">
+  <rect width="306" height="402" rx="23" fill="#fff"/>
+  <rect x="17" y="17" width="272" height="278" rx="15" fill="url(#canvas)"/>
+  <path d="M17 215Q80 160 138 204T289 184V295H17Z" fill="#e6c0ab"/>
+  <path d="M17 269Q100 221 170 259T289 240V295H17Z" fill="#c88f99" opacity=".8"/>
+  <circle cx="67" cy="65" r="24" fill="#f6d896"/>
+  <path d="m231 48 11 27 29 1-22 19 8 28-26-15-25 15 7-28-21-19 28-1Z" fill="#fff6dd" opacity=".7"/>
+  <path d="M117 228q-18-55 12-91 40-47 88-18 39 34 18 94l-31 35-80-9Z" fill="#453858"/>
+  <ellipse cx="182" cy="180" rx="52" ry="65" fill="#c97e69"/>
+  <path d="M132 178q0-67 60-75 48-5 51 44-17-17-44-18-8 40-54 48Z" fill="#493858"/>
+  <path d="M151 194q11 7 21 1M194 192q12 5 20-5" stroke="#693f45" stroke-width="4" stroke-linecap="round"/>
+  <path d="M177 221q11 10 25-4" stroke="#fff2d8" stroke-width="4" stroke-linecap="round" fill="none"/>
+  <path d="M85 295q0-49 40-62l29-8 33 27 35-32 23 8q50 17 51 67Z" fill="#66517e"/>
+  <path d="m156 229 31 23 35-28" fill="none" stroke="#f8d4c4" stroke-width="10" stroke-linecap="round"/>
+  <circle cx="270" cy="248" r="34" fill="#efba79"/><path d="m270 230 5 13 14 1-11 9 4 14-12-8-12 8 4-14-11-9 14-1Z" fill="#fff8ec"/>
+  <rect x="21" y="317" width="73" height="21" rx="10.5" fill="#fff0eb"/>
+  <text x="34" y="331" font-family="Arial,sans-serif" font-size="10" font-weight="700" fill="#ce7466">ARTISTA</text>
+  <text x="21" y="363" font-family="Arial,sans-serif" font-size="20" font-weight="700" fill="#24324a">Luna Almeida</text>
+  <text x="21" y="385" font-family="Arial,sans-serif" font-size="11" fill="#8390a0">Portfólio criativo · São Paulo</text>
+  <circle cx="260" cy="365" r="20" fill="#e76f62"/><path d="M251 365h18m-8-8 8 8-8 8" stroke="white" stroke-width="2.3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<g transform="translate(361 120) rotate(10 122 94)" filter="url(#smallShadow)">
+  <rect width="235" height="189" rx="19" fill="#fff"/>
+  <rect x="18" y="18" width="42" height="42" rx="13" fill="#fff0e7"/>
+  <path d="m29 37 10-9 11 9-11 10Z" fill="#e76f62"/><path d="M39 30v15M30 37h18" stroke="#fff" stroke-width="1.6"/>
+  <text x="71" y="34" font-family="Arial,sans-serif" font-size="10" font-weight="700" fill="#ad9dad" letter-spacing="2">OPORTUNIDADE</text>
+  <text x="71" y="55" font-family="Arial,sans-serif" font-size="13" font-weight="700" fill="#26334b">Arte &amp; Cidade</text>
+  <rect x="19" y="80" width="197" height="1" fill="#e9eaf0"/>
+  <text x="21" y="106" font-family="Arial,sans-serif" font-size="15" font-weight="700" fill="#25314a">Chamada criativa</text>
+  <text x="21" y="128" font-family="Arial,sans-serif" font-size="11" fill="#8390a0">Conecte sua arte a um novo espaço</text>
+  <rect x="20" y="147" width="105" height="26" rx="13" fill="#fff0eb"/>
+  <text x="31" y="164" font-family="Arial,sans-serif" font-size="10" font-weight="700" fill="#d47066">VER PROJETO ↗</text>
+</g>
+<g transform="translate(358 365) rotate(6 107 53)" filter="url(#smallShadow)">
+  <rect width="215" height="106" rx="18" fill="#263853"/>
+  <text x="19" y="30" font-family="Arial,sans-serif" font-size="10" font-weight="700" fill="#c7d4e2" letter-spacing="1">CONEXÕES CRIADAS</text>
+  <circle cx="37" cy="65" r="19" fill="#ffc17e"/><path d="M27 77q0-14 10-14t10 14" fill="#a66d69"/><circle cx="37" cy="58" r="7" fill="#a66d69"/>
+  <circle cx="70" cy="65" r="19" fill="#eaa0a0" stroke="#263853" stroke-width="3"/><path d="M60 77q0-14 10-14t10 14" fill="#6d517e"/><circle cx="70" cy="58" r="7" fill="#6d517e"/>
+  <circle cx="103" cy="65" r="19" fill="#a5c1be" stroke="#263853" stroke-width="3"/><path d="M93 77q0-14 10-14t10 14" fill="#355a70"/><circle cx="103" cy="58" r="7" fill="#355a70"/>
+  <text x="133" y="63" font-family="Arial,sans-serif" font-size="13" font-weight="700" fill="white">Arte em rede</text>
+  <text x="133" y="79" font-family="Arial,sans-serif" font-size="10" fill="#c6d1e0">TRAMA</text>
+</g>
+<g fill="#fff9ee"><path d="m494 28 6 17 17 6-17 6-6 17-6-17-17-6 17-6Z"/><circle cx="66" cy="120" r="8"/><circle cx="584" cy="351" r="6"/></g>
+<path d="M54 338q-26-38-5-57t39 18" fill="none" stroke="#fff5de" stroke-width="5" stroke-linecap="round" opacity=".85"/>
+</svg>

@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="680" height="420" viewBox="0 0 680 420" role="img" aria-labelledby="title desc">
+<title id="title">Cultura de bairro</title><desc id="desc">Ilustração de um encontro artístico com palco, música, grafite e prédios coloridos</desc>
+<defs><linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#ffe9d6"/><stop offset="1" stop-color="#e3b7ba"/></linearGradient><linearGradient id="sky" x1="0" x2="1"><stop stop-color="#e8d2d1"/><stop offset="1" stop-color="#f3c7a0"/></linearGradient></defs>
+<rect width="680" height="420" fill="url(#bg)"/><circle cx="530" cy="73" r="48" fill="#ffc87f" opacity=".8"/>
+<path d="M0 236 65 220 65 132 154 132 154 210 206 210 206 95 305 95 305 227 360 200 360 149 442 149 442 225 512 198 512 105 603 105 603 201 680 181V420H0Z" fill="#cd97a2"/>
+<path d="M0 268 75 243 75 177 146 177 146 238 220 206 220 154 294 154 294 246 385 226 385 183 464 183 464 251 552 226 552 146 633 146 633 237 680 228V420H0Z" fill="#ad8ba2"/>
+<g fill="#ffe2c8" opacity=".72"><rect x="92" y="191" width="15" height="19" rx="2"/><rect x="119" y="191" width="15" height="19" rx="2"/><rect x="235" y="169" width="16" height="20" rx="2"/><rect x="261" y="169" width="16" height="20" rx="2"/><rect x="399" y="196" width="16" height="20" rx="2"/><rect x="427" y="196" width="16" height="20" rx="2"/><rect x="567" y="166" width="16" height="20" rx="2"/><rect x="593" y="166" width="16" height="20" rx="2"/></g>
+<path d="M0 297q170-33 342-4t338-9v136H0Z" fill="#5a5576"/><path d="M0 343q166-33 338 0t342-3v80H0Z" fill="#393e60"/>
+<rect x="89" y="155" width="469" height="224" rx="12" fill="#293d54"/><rect x="105" y="172" width="437" height="188" rx="7" fill="#355469"/>
+<path d="M105 172h437v38H105Z" fill="#efa77c"/>
+<path d="M125 191h394" stroke="#fff1da" stroke-width="2" stroke-dasharray="8 10"/>
+<rect x="136" y="230" width="135" height="104" rx="8" fill="#eeb48e"/><path d="M147 296q27-63 67-35t46-5" fill="none" stroke="#6c668e" stroke-width="16" stroke-linecap="round"/>
+<circle cx="185" cy="261" r="13" fill="#fff5cf"/><circle cx="245" cy="309" r="12" fill="#d36d70"/>
+<rect x="288" y="231" width="225" height="107" rx="8" fill="#cf8d91"/>
+<text x="399" y="273" text-anchor="middle" font-family="Arial,sans-serif" font-size="29" font-weight="800" fill="#fff4d7" letter-spacing="1">ARTE</text>
+<text x="399" y="307" text-anchor="middle" font-family="Arial,sans-serif" font-size="24" font-weight="800" fill="#fff4d7" letter-spacing="3">NO BAIRRO</text>
+<path d="M82 359h490" stroke="#f8d7b6" stroke-width="5" stroke-linecap="round"/>
+<g>
+<path d="M64 406v-78q0-17 17-17 16 0 16 17v78" fill="#cf7778"/><circle cx="81" cy="299" r="23" fill="#bc7b63"/><path d="M59 292q-1-31 23-32 24 1 23 31-8-13-26-13-5 11-20 14" fill="#42374c"/>
+<path d="M558 417v-74q0-22 20-22 24 0 24 22v74" fill="#eeb170"/><circle cx="579" cy="309" r="23" fill="#8f625e"/><path d="M559 308q-13-43 17-47 33-3 25 49-7-23-20-23-15 0-22 21" fill="#3a3f57"/>
+<path d="M604 420v-61q0-17 18-17 19 0 19 17v61" fill="#a98ab5"/><circle cx="623" cy="330" r="17" fill="#bb8368"/><path d="M608 326q0-27 16-26 20 0 16 28-11-11-32-2" fill="#53435b"/>
+</g>
+<g fill="#fff4da"><path d="m52 90 7 18 19 7-19 7-7 18-7-18-19-7 19-7Z"/><path d="m595 49 5 12 13 5-13 5-5 13-5-13-12-5 12-5Z"/></g>
+<g fill="none" stroke="#ffefdf" stroke-width="3"><path d="M50 216q20-36 42 0"/><path d="M560 197q17-26 34 0"/></g>
+</svg>
