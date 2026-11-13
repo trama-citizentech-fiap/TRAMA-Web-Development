@@ -12,7 +12,9 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/styles.css">
+  <link rel="stylesheet" href="assets/css/dinamico.css">
   <script src="assets/js/script.js" defer></script>
+  <script src="assets/js/galeria.js" defer></script>
 </head>
 <body>
   <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
@@ -31,6 +33,8 @@
           <a class="nav-item" href="#objetivos" data-nav="objetivos"><span class="nav-symbol" aria-hidden="true">✦</span><span>Objetivos</span></a>
           <a class="nav-item" href="#publico" data-nav="publico"><span class="nav-symbol" aria-hidden="true">☷</span><span>Público-alvo</span></a>
           <a class="nav-item" href="#beneficios" data-nav="beneficios"><span class="nav-symbol" aria-hidden="true">↗</span><span>Benefícios</span></a>
+          <a class="nav-item" href="#galeria" data-nav="galeria"><span class="nav-symbol" aria-hidden="true">▧</span><span>Galeria interativa</span></a>
+          <a class="nav-item" href="#participe" data-nav="participe"><span class="nav-symbol" aria-hidden="true">✉</span><span>Participe</span></a>
         </nav>
       </div>
       <div class="sidebar-bottom">
@@ -135,6 +139,44 @@
             <div class="impact-layout">
               <div class="impact-card impact-dark"><span class="impact-eyebrow">O QUE QUEREMOS TRANSFORMAR</span><h3>A arte já move a comunidade. O TRAMA ajuda a conectar seus caminhos.</h3><div class="impact-pattern" aria-hidden="true"><span>✳</span><span>◈</span><span>✴</span></div><span class="impact-loc">PROPOSTA PILOTO · CIDADE TIRADENTES</span></div>
               <div class="impact-card impact-light"><div class="impact-measure"><span class="impact-tag">COMO MEDIR</span><h3>Indicadores de acompanhamento</h3><ul class="indicator-list"><li><i aria-hidden="true"></i>Portfólios e projetos publicados</li><li><i aria-hidden="true"></i>Conexões e conversas iniciadas</li><li><i aria-hidden="true"></i>Candidaturas a oportunidades</li><li><i aria-hidden="true"></i>Feedback de artistas participantes</li></ul></div><div class="impact-expand"><span class="impact-tag">COMO AMPLIAR</span><span>Validar com criadores locais e adaptar a solução a outros bairros de São Paulo.</span></div></div>
+            </div>
+          </section>
+
+
+          <!-- Web Development: galeria com três imagens do universo TRAMA. -->
+          <section class="content-section" id="galeria" aria-labelledby="galeria-title">
+            <div class="section-intro">
+              <span class="eyebrow">06 <span>·</span> GALERIA INTERATIVA</span>
+              <h2 id="galeria-title">Cada história tem<br><em>um lugar para brilhar.</em></h2>
+              <p>Três olhares sobre a proposta: a força da cultura local, as conexões que podem nascer e os artistas que queremos valorizar.</p>
+              <p>Navegue entre as imagens usando os botões, os indicadores ou as setas do teclado.</p>
+            </div>
+            <div class="showcase" id="trama-slideshow" role="region" aria-roledescription="carrossel" aria-label="Galeria de imagens do TRAMA" tabindex="0">
+              <div class="showcase-media" id="slide-media" data-tone="coral">
+                <span class="showcase-stamp">TRAMA / CULTURA &amp; CONEXÃO</span>
+                <img id="slide-image" src="assets/img/cultura-periferica.svg" width="680" height="420" alt="Ilustração de palco cultural de bairro com música, arte urbana e moradores" loading="lazy">
+                <span class="showcase-photo-note">ILUSTRAÇÕES AUTORAIS · PROJETO ACADÊMICO</span>
+              </div>
+              <div class="showcase-copy">
+                <div class="showcase-meta"><span id="slide-kicker">01 / CULTURA LOCAL</span><span id="slide-count">01 — 03</span></div>
+                <div class="showcase-text" aria-live="polite" aria-atomic="true">
+                  <h3 id="slide-title">A criatividade já ocupa o território.</h3>
+                  <p id="slide-description">A cena cultural de bairro inspira a proposta de levar novas oportunidades a artistas independentes.</p>
+                </div>
+                <div class="showcase-controls" aria-label="Controles da galeria">
+                  <button class="carousel-arrow" id="slide-prev" type="button" aria-label="Imagem anterior">←</button>
+                  <div class="slide-dots" aria-label="Escolher imagem">
+                    <button class="slide-dot active" type="button" data-slide="0" aria-label="Exibir imagem 1 de 3: Cultura local" aria-pressed="true"><span></span></button>
+                    <button class="slide-dot" type="button" data-slide="1" aria-label="Exibir imagem 2 de 3: Conexões" aria-pressed="false"><span></span></button>
+                    <button class="slide-dot" type="button" data-slide="2" aria-label="Exibir imagem 3 de 3: Artistas" aria-pressed="false"><span></span></button>
+                  </div>
+                  <button class="carousel-arrow" id="slide-next" type="button" aria-label="Próxima imagem">→</button>
+                </div>
+                <div class="showcase-footer">
+                  <span>Explore o propósito do TRAMA em imagens</span>
+                  <button type="button" class="slideshow-toggle" id="slide-toggle" aria-pressed="false">Pausar troca automática <span aria-hidden="true">Ⅱ</span></button>
+                </div>
+              </div>
             </div>
           </section>
 
