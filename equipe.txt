@@ -1,0 +1,12 @@
+TRAMA — GLOBAL SOLUTION 2026.2
+Disciplina: Web Development | Front-end Dinâmico
+
+Integrante 1
+Nome completo: Pedro Nilton Jardim Juvenal
+RM: 574225
+
+Organização GitHub: PENDENTE DE CRIAÇÃO NA CONTA DO ALUNO
+Repositório GitHub: PENDENTE DE PUBLICAÇÃO (inserir URL verdadeira antes da entrega)
+
+Observação: os arquivos .git guardam o histórico local de commits, os merges e as branches.
+Esse histórico precisará ser publicado no GitHub pelo responsável pela conta.

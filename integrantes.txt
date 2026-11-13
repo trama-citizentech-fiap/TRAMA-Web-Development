@@ -1,10 +1,10 @@
 TRAMA — GLOBAL SOLUTION 2026.2
-FRONT-END DESIGN — LANDING PAGE
+Front-end Design + Web Development
 
 Integrante 1
-Nome completo: Pedro Juvenal [CONFERIR NOME COMPLETO CONFORME CADASTRO FIAP]
-RM: [PREENCHER RM]
+Nome completo: Pedro Nilton Jardim Juvenal
+RM: 574225
 
-[ACRESCENTAR DEMAIS INTEGRANTES, SE HOUVER, COM NOME COMPLETO E RM]
+Repositório GitHub: PENDENTE DE PUBLICAÇÃO (inserir link real antes da entrega)
 
-ATENÇÃO: antes de enviar, retire os campos entre colchetes e informe os dados verdadeiros.
+Arquivo equipe.txt incluído para atender ao formato exigido em Web Development.
