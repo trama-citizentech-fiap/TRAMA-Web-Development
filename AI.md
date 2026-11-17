@@ -5,20 +5,8 @@
 
 ## Ferramenta e finalidade
 
-Foi utilizado o **ChatGPT (OpenAI)** como apoio à implementação da versão de Web Development da landing page preexistente e à preparação dos arquivos de entrega.
+Foi utilizado o chatgpt pra me ajudar nas ideias pra fazer o formulario e algumas coisas de como tranferir dados, mas a landing base foi feita 100 por mim ja q n podia IA, e as ferramentas que implementei pra essa entrega eu tbm fiz o codigo sozinho mas pedi pra ia me ensinar como fazer o carrosel ai fiz meu proprio
 
 ## Atividades realizadas com auxílio de IA
 
-- Leitura e interpretação dos requisitos mostrados nos slides da disciplina.
-- Preservação do HTML, CSS, JavaScript, textos e ilustrações da landing base fornecida.
-- Complementação da navegação, criação de slideshow de três imagens e controles acessíveis.
-- Desenvolvimento de formulário demonstrativo com validação de campos em JavaScript puro, mensagens de erro e prévia segura na página.
-- Acréscimo dos estilos responsivos em `assets/css/dinamico.css`.
-- Organização de documentação, `equipe.txt`, roteiro para GitHub e preparação do repositório Git local com branches e commits.
-- Apoio à verificação de funcionamento no navegador.
-
-## Revisão e responsabilidade
-
-Os arquivos podem ser lidos, modificados e testados localmente. O integrante responsável deve revisar o código e a documentação, compreender as funcionalidades e validar o resultado antes da entrega. Não foram criados perfis, organizações ou repositórios remotos em nome do aluno, e o formulário não envia dados reais.
-
-Este registro foi incluído para cumprir o critério da avaliação sobre declaração de uso de inteligência artificial.
+- Debate sobre ideias para a plataforma final

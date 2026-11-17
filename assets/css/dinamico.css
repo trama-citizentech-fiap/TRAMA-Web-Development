@@ -54,7 +54,7 @@
   .carousel-arrow,.showcase-media,.slide-dot span{transition:none}
 }
 
-/* Formulario de demonstracao — cartoes, hierarquia e identidade TRAMA. */
+/* Formulario — cartoes, hierarquia e identidade TRAMA. */
 .contact-layout{display:grid;grid-template-columns:minmax(0,.77fr) minmax(0,1.23fr);gap:19px;align-items:stretch}
 .contact-aside{position:relative;overflow:hidden;border-radius:19px;background:linear-gradient(155deg,#e77b6e,#e9a17e);color:#fff;padding:34px 32px;display:flex;flex-direction:column;min-height:550px;isolation:isolate}
 .contact-aside:after{content:'';position:absolute;border:1px solid #ffffff43;border-radius:50%;height:400px;width:400px;bottom:-240px;left:-175px;box-shadow:0 0 0 65px #ffffff0e,0 0 0 125px #ffffff0c;z-index:-1}
